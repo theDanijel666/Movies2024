@@ -68,6 +68,11 @@ namespace Movies.API.Controllers
         [HttpGet("search",Name = "GetWeatherForecastByplace")]
         public WeatherForecast GetByPlace(string town)
         {
+            //if (Request.QueryString.HasValue) 
+            //{
+            //    Request.QueryString.Value
+            //}
+
             return new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(10)),
